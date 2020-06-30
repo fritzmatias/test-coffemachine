@@ -13,5 +13,10 @@
 
 ### how to test it
    - `bash builder.sh build` script to build the docker containers.
+   - `bash builder.sh setup` to initialize the backend with data.
    - `bash builder.sh run ` to execute docker-compose up.
    - `bash builder.sh stop` to stop the services.
+
+### Endpoints
+   - browser endpoint http://localhost:4200/
+   - backend endpoints http://localhost:8080/api/v1/**
