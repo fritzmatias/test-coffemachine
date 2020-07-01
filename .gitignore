@@ -1,0 +1,11 @@
+.git
+
+coffemachine/target/
+
+coffemachine/.classpath
+
+coffemachine/.project
+
+coffemachine/.settings/
+
+coffemachine-angular/node_modules/
