@@ -12,10 +12,11 @@
     - `builder.sh` is the script to simplify build/run/stop the demo environment.
 
 ### how to test it
-   - `bash builder.sh build` script to build the docker containers.
-   - `bash builder.sh setup` to initialize the backend with data.
-   - `bash builder.sh run ` to execute docker-compose up.
-   - `bash builder.sh stop` to stop the services.
+   1. `bash builder.sh build` script to build the docker containers.
+   1. `bash builder.sh run ` to execute docker-compose up.
+   1. `bash builder.sh setup` to initialize the backend with data.
+   1. `bash builder.sh stop` to stop the services.
+   1. open http://localhost:4200/ in your browser.
 
 ### Endpoints
    - browser endpoint http://localhost:4200/
