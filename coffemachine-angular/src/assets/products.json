@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Coffe with milk",
+    "price": 5,
+    "description": "A large phone with one of the best screens"
+  },
+  {
+    "name": "Cocoa",
+    "price": 4,
+    "description": "A great phone with one of the best cameras"
+  },
+  {
+    "name": "Sugar",
+    "price": 1,
+    "description": ""
+  }
+]

@@ -1,0 +1,19 @@
+<div *ngIf="!!amount">
+<h3>Total: {{amount | currency}}</h3>
+</div>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+  <div formArrayName="items" >
+    <div class="cart-item" *ngFor="let item of items.controls; let i=index;">
+      <div [formGroupName]="i" *ngIf="!!item.value">
+        <span>{{ item.value.name }}</span>
+        <span>{{ item.value.price | currency }}</span>
+        <input [hidden]="true" readonly="true" type="text" value="{{item.value.id}}" />
+      </div>
+    </div>
+  </div>
+
+  <button class="button" type="submit">Purchase</button>
+</form>
+  <button class="cancel-button" (click)="onCancel();">Cancel</button>

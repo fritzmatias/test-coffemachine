@@ -1,0 +1,20 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products; index as productPos">
+
+  <a [title]="product.name + ' details'" [routerLink]="['/products',product.id]" (click)="addToCart(productPos)">
+    <div class="select-item">
+      <h3>
+        {{ product.name }}
+      </h3>
+
+      <p *ngIf="product.description">
+        Description: {{ product.description }}
+      </p>
+      <p *ngIf="product.price">
+        Price: {{ product.price |currency }}
+      </p>
+    </div>
+  </a>
+
+</div>
