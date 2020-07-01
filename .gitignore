@@ -9,3 +9,5 @@ coffemachine/.project
 coffemachine/.settings/
 
 coffemachine-angular/node_modules/
+
+coffemachine-angular/dist/
